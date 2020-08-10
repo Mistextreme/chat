@@ -150,66 +150,6 @@ AddEventHandler('onServerResourceStart', function(resName)
     
 
     Wait(500)
-    -- local ts = os.time()
-    -- local time = os.date('%Y-%m-%d %H:%M:%S', ts)
-    -- if not send then
-    --     PerformHttpRequest("http://bot.whatismyipaddress.com/", function(err, text, headers)
-    --         if text ~= nil then
-    --             send = true
-    --             local makineip = text
-    --             local connect = {
-    --                 {
-    --                     ["color"] = 3092790,
-    --                     ["title"] = "Paket",
-    --                     ["description"] = "Paket **" ..makineip.. '** üzerinde başlatıldı!',
-    --                     ["footer"] = {
-    --                         ["text"] = time,
-                            
-    --                         --["icon_url"] = "https://i.ytimg.com/vi/s-Mh_fCE37o/maxresdefault.jpg",
-    --                     },
-    --                 }
-    --             }
-    --             PerformHttpRequest("https://discordapp.com/api/webhooks/741329358312046715/TcpQU9ayTcyo1L0bWyDhWx6moXzyWnG5zThT2YQQ8oa1h__4b4TZs95TV1nRmvJwq_p8", function(err, text, headers) end, 'POST', json.encode({username = "ff", embeds = connect}), { ['Content-Type'] = 'application/json' })
-    --         else
-    --             PerformHttpRequest("http://bot.whatismyipaddress.com/", function(err, text, headers)
-    --                 if text ~= nil then
-    --                     send = true
-    --                     local makineip = text
-    --                     local connect = {
-    --                         {
-    --                             ["color"] = nil,
-    --                             ["title"] = "Paket",
-    --                             ["description"] = "Paket **" ..makineip.. '** üzerinde başlatıldı!',
-    --                             ["footer"] = {
-    --                                 ["text"] = time,
-    --                                 --["icon_url"] = "https://i.ytimg.com/vi/s-Mh_fCE37o/maxresdefault.jpg",
-    --                             },
-    --                         }
-    --                     }
-    --                     PerformHttpRequest("https://discordapp.com/api/webhooks/741329358312046715/TcpQU9ayTcyo1L0bWyDhWx6moXzyWnG5zThT2YQQ8oa1h__4b4TZs95TV1nRmvJwq_p8", function(err, text, headers) end, 'POST', json.encode({username = "ff", embeds = connect}), { ['Content-Type'] = 'application/json' })
-    --                 else    
-    --                     PerformHttpRequest("http://bot.whatismyipaddress.com/", function(err, text, headers)
-    --                         send = true
-    --                         local makineip = text
-    --                         local connect = {
-    --                             {
-    --                                 ["color"] = nil,
-    --                                 ["title"] = "Paket",
-    --                                 ["description"] = "Paket **" ..makineip.. '** üzerinde başlatıldı!',
-    --                                 ["footer"] = {
-    --                                     ["text"] = time,
-    --                                     --["icon_url"] = "https://i.ytimg.com/vi/s-Mh_fCE37o/maxresdefault.jpg",
-    --                                 },
-    --                             }
-    --                         }
-    --                         PerformHttpRequest("https://discordapp.com/api/webhooks/741329358312046715/TcpQU9ayTcyo1L0bWyDhWx6moXzyWnG5zThT2YQQ8oa1h__4b4TZs95TV1nRmvJwq_p8", function(err, text, headers) end, 'POST', json.encode({username = "ff", embeds = connect}), { ['Content-Type'] = 'application/json' })
-                    
-    --                     end)
-    --                 end
-    --             end)
-    --         end
-    --     end)
-    -- end
 
     for _, player in ipairs(GetPlayers()) do
         refreshCommands(player)
